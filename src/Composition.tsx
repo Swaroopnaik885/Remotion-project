@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AbsoluteFill,
+  Composition,
   Easing,
   interpolate,
   useCurrentFrame,
