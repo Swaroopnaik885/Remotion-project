@@ -63,42 +63,10 @@ const OrbitalMark: React.FC<{ frame: number }> = ({ frame }) => {
         transform: `translate(-50%, -50%) scale(${scale}) rotate(${rotation}deg)`,
       }}
     >
-      <div
-        style={{
-          position: "absolute",
-          inset: 20,
-          borderRadius: "50%",
-          border: "1px solid rgba(114,246,232,0.28)",
-          boxShadow: "0 0 80px rgba(84,123,255,0.10), inset 0 0 70px rgba(114,246,232,0.04)",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          inset: 56,
-          borderRadius: "50%",
-          border: "1px solid rgba(114,246,232,0.55)",
-          transform: "rotateX(68deg) rotateZ(18deg)",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          inset: 70,
-          borderRadius: "50%",
-          border: "1px solid rgba(84,123,255,0.62)",
-          transform: "rotateY(68deg) rotateZ(-28deg)",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          inset: 98,
-          borderRadius: "50%",
-          border: "1px solid rgba(244,247,251,0.34)",
-          transform: "rotateX(66deg) rotateZ(58deg)",
-        }}
-      />
+      <div style={{ position: "absolute", inset: 20, borderRadius: "50%", border: "1px solid rgba(114,246,232,0.28)", boxShadow: "0 0 80px rgba(84,123,255,0.10), inset 0 0 70px rgba(114,246,232,0.04)" }} />
+      <div style={{ position: "absolute", inset: 56, borderRadius: "50%", border: "1px solid rgba(114,246,232,0.55)", transform: "rotateX(68deg) rotateZ(18deg)" }} />
+      <div style={{ position: "absolute", inset: 70, borderRadius: "50%", border: "1px solid rgba(84,123,255,0.62)", transform: "rotateY(68deg) rotateZ(-28deg)" }} />
+      <div style={{ position: "absolute", inset: 98, borderRadius: "50%", border: "1px solid rgba(244,247,251,0.34)", transform: "rotateX(66deg) rotateZ(58deg)" }} />
       <div
         style={{
           position: "absolute",
@@ -112,29 +80,9 @@ const OrbitalMark: React.FC<{ frame: number }> = ({ frame }) => {
           boxShadow: "0 0 34px rgba(114,246,232,0.28), 0 0 110px rgba(84,123,255,0.22)",
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            inset: 1,
-            borderRadius: 33,
-            background: "linear-gradient(135deg, rgba(255,255,255,0.7), transparent 42%)",
-            opacity: 0.72,
-          }}
-        />
+        <div style={{ position: "absolute", inset: 1, borderRadius: 33, background: "linear-gradient(135deg, rgba(255,255,255,0.7), transparent 42%)", opacity: 0.72 }} />
       </div>
-      <div
-        style={{
-          position: "absolute",
-          left: "50%",
-          top: "50%",
-          width: 7,
-          height: 7,
-          borderRadius: "50%",
-          background: C.white,
-          boxShadow: "0 0 18px 5px rgba(114,246,232,0.8)",
-          transform: "translate(-50%, -50%)",
-        }}
-      />
+      <div style={{ position: "absolute", left: "50%", top: "50%", width: 7, height: 7, borderRadius: "50%", background: C.white, boxShadow: "0 0 18px 5px rgba(114,246,232,0.8)", transform: "translate(-50%, -50%)" }} />
     </div>
   );
 };
@@ -203,19 +151,7 @@ export const MyComponent: React.FC = () => {
           opacity: vignette,
         }}
       />
-      <div
-        style={{
-          position: "absolute",
-          width: 980,
-          height: 980,
-          left: "50%",
-          top: "42%",
-          transform: "translate(-50%, -50%)",
-          borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(39,92,131,0.18), rgba(19,31,58,0.07) 42%, transparent 70%)",
-          filter: "blur(12px)",
-        }}
-      />
+      <div style={{ position: "absolute", width: 980, height: 980, left: "50%", top: "42%", transform: "translate(-50%, -50%)", borderRadius: "50%", background: "radial-gradient(circle, rgba(39,92,131,0.18), rgba(19,31,58,0.07) 42%, transparent 70%)", filter: "blur(12px)" }} />
       {Array.from({ length: 26 }, (_, i) => (
         <DataParticle
           key={i}
@@ -230,30 +166,9 @@ export const MyComponent: React.FC = () => {
       <OrbitalMark frame={frame} />
       <CornerLabel frame={frame} />
 
-      <div
-        style={{
-          position: "absolute",
-          left: "50%",
-          top: 730,
-          width: lineWidth,
-          height: 1,
-          transform: "translateX(-50%)",
-          background: "linear-gradient(90deg, transparent, rgba(114,246,232,0.6), rgba(84,123,255,0.8), transparent)",
-          opacity: 0.7,
-        }}
-      />
+      <div style={{ position: "absolute", left: "50%", top: 730, width: lineWidth, height: 1, transform: "translateX(-50%)", background: "linear-gradient(90deg, transparent, rgba(114,246,232,0.6), rgba(84,123,255,0.8), transparent)", opacity: 0.7 }} />
 
-      <div
-        style={{
-          position: "absolute",
-          top: 660,
-          left: 0,
-          right: 0,
-          textAlign: "center",
-          opacity: titleIn * titleOut,
-          transform: `translateY(${titleY}px)`,
-        }}
-      >
+      <div style={{ position: "absolute", top: 660, left: 0, right: 0, textAlign: "center", opacity: titleIn * titleOut, transform: `translateY(${titleY}px)` }}>
         <div style={{ fontSize: 13, color: C.cyan, letterSpacing: 7, fontWeight: 600, marginBottom: 20 }}>
           IMAGINATION, ENGINEERED
         </div>
@@ -262,59 +177,14 @@ export const MyComponent: React.FC = () => {
         </div>
       </div>
 
-      <div
-        style={{
-          position: "absolute",
-          top: 820,
-          left: 0,
-          right: 0,
-          textAlign: "center",
-          opacity: subIn * titleOut,
-          transform: `translateY(${rise(frame, 125, 160, 18)}px)`,
-          color: "#A8B4C4",
-          fontSize: 18,
-          letterSpacing: 2.2,
-        }}
-      >
+      <div style={{ position: "absolute", top: 820, left: 0, right: 0, textAlign: "center", opacity: subIn * titleOut, transform: `translateY(${rise(frame, 125, 160, 18)}px)`, color: "#A8B4C4", fontSize: 18, letterSpacing: 2.2 }}>
         Motion. Meaning. Momentum.
       </div>
 
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "linear-gradient(180deg, rgba(5,7,11,0.96), rgba(5,7,11,0.12) 35%, rgba(5,7,11,0.12) 60%, rgba(5,7,11,0.98))",
-          opacity: reveal,
-          pointerEvents: "none",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          left: "50%",
-          top: "50%",
-          width: 700,
-          height: 700,
-          transform: `translate(-50%, -50%) scale(${interpolate(frame, [260, 330], [0.7, 1.15], { ...clamp, easing: ease })})`,
-          borderRadius: "50%",
-          border: "1px solid rgba(114,246,232,0.28)",
-          boxShadow: "0 0 100px rgba(84,123,255,0.13), inset 0 0 100px rgba(114,246,232,0.04)",
-          opacity: reveal * 0.85,
-        }}
-      />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(5,7,11,0.96), rgba(5,7,11,0.12) 35%, rgba(5,7,11,0.12) 60%, rgba(5,7,11,0.98))", opacity: reveal, pointerEvents: "none" }} />
+      <div style={{ position: "absolute", left: "50%", top: "50%", width: 700, height: 700, transform: `translate(-50%, -50%) scale(${interpolate(frame, [260, 330], [0.7, 1.15], { ...clamp, easing: ease })})`, borderRadius: "50%", border: "1px solid rgba(114,246,232,0.28)", boxShadow: "0 0 100px rgba(84,123,255,0.13), inset 0 0 100px rgba(114,246,232,0.04)", opacity: reveal * 0.85 }} />
 
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-          opacity: endIn,
-          transform: `translateY(${endY}px)`,
-        }}
-      >
+      <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", opacity: endIn, transform: `translateY(${endY}px)` }}>
         <div style={{ display: "flex", alignItems: "center", gap: 18, marginBottom: 25 }}>
           <div style={{ width: 42, height: 2, background: C.cyan, boxShadow: `0 0 15px ${C.cyan}` }} />
           <span style={{ color: C.cyan, fontSize: 14, letterSpacing: 6, fontWeight: 600 }}>N / STUDIO PRESENTS</span>
@@ -329,32 +199,8 @@ export const MyComponent: React.FC = () => {
         <div style={{ marginTop: 58, height: 2, width: interpolate(frame, [350, 400], [0, 190], { ...clamp, easing: ease }), background: C.cyan, boxShadow: `0 0 20px ${C.cyan}` }} />
       </div>
 
-      <AbsoluteFill
-        style={{
-          backgroundColor: C.bg,
-          opacity: interpolate(frame, [0, 14, 440, 450], [1, 0, 0, 1], { ...clamp }),
-          pointerEvents: "none",
-        }}
-      />
-      <AbsoluteFill
-        style={{
-          background: "radial-gradient(ellipse at center, transparent 34%, rgba(0,0,0,0.48) 100%)",
-          pointerEvents: "none",
-        }}
-      />
+      <AbsoluteFill style={{ backgroundColor: C.bg, opacity: interpolate(frame, [0, 14, 440, 450], [1, 0, 0, 1], { ...clamp }), pointerEvents: "none" }} />
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 34%, rgba(0,0,0,0.48) 100%)", pointerEvents: "none" }} />
     </AbsoluteFill>
-  );
-};
-
-export const MyComposition = () => {
-  return (
-    <Composition
-      id="CinematicTechIntro"
-      component={MyComponent}
-      durationInFrames={15 * 30}
-      fps={30}
-      width={1920}
-      height={1080}
-    />
   );
 };
