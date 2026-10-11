@@ -192,7 +192,7 @@ export const MyComponent: React.FC = () => {
   const endIn = fade(frame, 326, 365);
   const endY = rise(frame, 326, 365, 26);
   const lineWidth = interpolate(frame, [24, 100, 300, 400], [0, 440, 780, 780], { ...clamp, easing: ease });
-  const vignette = interpolate(frame, [0, 70, 450], [0.45, 0.78, 0.84], { ...clamp });
+  const vignette = interpolate(frame / fps, [0, 70 / fps, 15], [0.45, 0.78, 0.84], { ...clamp });
 
   return (
     <AbsoluteFill style={{ backgroundColor: C.bg, color: C.white, overflow: "hidden", fontFamily: "Arial, Helvetica, sans-serif" }}>
